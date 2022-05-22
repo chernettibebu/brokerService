@@ -23,7 +23,7 @@ class AccountController extends Controller
         $account->password = $request->password;
         $is_saved = $account->save();
       if($is_saved){
-      echo "DATA    posted successfully.";
+      echo "Account created successfully.";
                  }
       else{
        echo "Sorry, try again something went wrong.";

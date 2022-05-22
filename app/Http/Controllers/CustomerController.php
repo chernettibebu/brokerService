@@ -20,7 +20,7 @@ class CustomerController extends Controller
         $customer->type = $request->type;
         $is_saved = $customer->save();
       if($is_saved){
-      echo "DATA    posted successfully.";
+      echo "successfully.";
                  }
       else{
        echo "Sorry, try again something went wrong.";

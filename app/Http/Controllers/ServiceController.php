@@ -11,7 +11,7 @@ class ServiceController extends Controller
     //
     public function register()
     {
-    return view('Service.post');
+    return view('Service.register');
     }
       function store(Request $request)
       
@@ -25,7 +25,7 @@ class ServiceController extends Controller
         $service->postedate = $request->postedate;
         $is_saved = $service->save();
       if($is_saved){
-      echo "DATA    posted successfully.";
+      echo "Service data registred successfully.";
                  }
       else{
        echo "Sorry, try again something went wrong.";
