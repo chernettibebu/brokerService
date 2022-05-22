@@ -1,11 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Models\Service;
-use App\Models\Service as ModelsService;
-
+use Illuminate\Http\Request;
 class ServiceController extends Controller
 {
     //
@@ -36,7 +33,7 @@ class ServiceController extends Controller
 
 public function get_all()
 {
- $service = Service::all();
+ $service = service::all();
  return view('Service.list', compact('Service'));
 }
  
@@ -44,7 +41,7 @@ public function get_all()
 
     public function get_by_id($id)
  {
-  $service = Service::where('id', $id)->first();
+  $service = service::where('id', $id)->first();
   return view('Service.search', compact('Service'));
   }
 }

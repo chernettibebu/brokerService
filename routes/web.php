@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ServiceController;
+use App\Models\Service;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +22,7 @@ Route::get('/', function () {
 Route::get('/Account/create_account', [AccountController::class, 'register'])->name('Account/create_account');
 Route::post('/Account/create_account', [AccountController::class, 'store'])->name('Account/create_account');
 Route::get('/Service/register', [ServiceController::class, 'register'])->name('/Service/register');
-Route::post('/Service/register', [Servicecontroler::class, 'store'])->name('/Service/register');
+Route::post('/Service/register', [ServiceController::class, 'store'])->name('/Service/register');
 
 
 
@@ -35,7 +36,7 @@ Route::post('/Service/register', [Servicecontroler::class, 'store'])->name('/Ser
  Route::get('/Service/search/{id}', [ServiceController::class, 'get_by_id']);
 // Route::get('/Catagory/search/{id}', [CatagoryController::class, 'get_by_id']);
 //Auth::routes();
-
+//Route::resource('/Service/register, [ServiceController::class,'register']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //Auth::routes();
 
