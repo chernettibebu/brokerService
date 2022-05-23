@@ -14,6 +14,9 @@
  <thead class="thead-inverse">
  <tr>
  <th>
+ID
+ </th>
+ <th>
  TYPE
  </th>
 <th>
@@ -33,6 +36,7 @@
  <tbody>
  @foreach($service as $service)
  <tr>
+ <td> {{ $service->id }}</td>
  <td> {{ $service->type }}</td>
  <td> {{ $service->name }}</td>
  <td> {{ $service->address }}</td>

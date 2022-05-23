@@ -21,7 +21,9 @@ return new class extends Migration
             $table->string('phone');
             $table->string('password');
             $table->timestamps();
-
+            //$table->unsignedBigInteger('customer_id');
+            //$table->foreign('customer_id')->references('id')->on('customers');
+            // $table->foreign('catagory_id')->references('id')->on('catagories')->onDelete('cascade');
         });
     }
 

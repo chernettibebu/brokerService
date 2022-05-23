@@ -13,10 +13,10 @@ class Customer extends Model
         ];
 public function  Accounts()
 {
-    return $this->hasOne(Accounts::class);
+    return $this->hasOne(Accounts::class, 'foreign_key');
 }
 public function  Services()
 {
-    return $this->hasMany(Services::class);
+    return $this->hasMany(Services::class, 'foreign_key');
 }
 }

@@ -13,6 +13,6 @@ class Account extends Model
         ];
 public function  Customers()
 {
-    return $this->belongsTo(Customers::class);
+    return $this->belongsTo(Customers::class, 'foreign_key');
 }
 }

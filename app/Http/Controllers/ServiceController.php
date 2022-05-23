@@ -41,7 +41,7 @@ public function get_all()
 
     public function get_by_id($id)
  {
-  $service = service::where('id', $id)->first();
+  $service = Service::where('id', $id)->first();
   return view('Service.search', compact('service'));
   }
 }

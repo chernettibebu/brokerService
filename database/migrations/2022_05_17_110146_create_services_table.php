@@ -20,7 +20,10 @@ return new class extends Migration
            $table-> string('address');
            $table-> string('cost');
            $table-> string('postedate');
-            $table->timestamps();
+           $table->timestamps();
+           //$table->unsignedBigInteger('customer_id');
+           //$table->foreign('customer_id')->references('id')->on('customers');
+           // $table->foreign('catagory_id')->references('id')->on('catagories')->onDelete('cascade');
         });
     }
 
