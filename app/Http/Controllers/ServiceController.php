@@ -34,7 +34,7 @@ class ServiceController extends Controller
 public function get_all()
 {
  $service = service::all();
- return view('Service.list', compact('Service'));
+ return view('Service.list', compact('service'));
 }
  
 
@@ -42,6 +42,6 @@ public function get_all()
     public function get_by_id($id)
  {
   $service = service::where('id', $id)->first();
-  return view('Service.search', compact('Service'));
+  return view('Service.search', compact('service'));
   }
 }

@@ -8,16 +8,17 @@
  {{ __('Service Detail') }}
  </div>
  <div class="card-body">
- type : {{ $service->type }}
+ Id : {{ $service->id }}
  <br>
- name : {{ $service->name }}
+ Type : {{ $service->type }}
  <br>
- address : {{ $service->address }}
+ Name : {{ $service->name }}
  <br>
- cost : {{ $service->cost }}
- id : {{ $service->id }}
+ Address : {{ $service->address }}
  <br>
- postedate : {{ $service->postedate }}
+ Cost : {{ $service->cost }}
+ <br>
+ Postedate : {{ $service->postedate }}
  <br>
  <br>
  </div>

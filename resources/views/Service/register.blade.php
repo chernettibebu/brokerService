@@ -6,7 +6,7 @@
  <div class="card">
  <div class="card-header">{{ __('PLEACE FILL property INFORMATION ') }}</div>
  <div class="card-body">
- <form method="POST" action="{{ route('Service/register') }}"
+ <form method="POST" action="{{ route('/Service/register') }}"
 >
  @csrf
  <div class="form-group row">
